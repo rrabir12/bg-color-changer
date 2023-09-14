@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 20px 100px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0px auto;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .btn {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            float:right;
+            cursor: pointer;
+        }
+
+        #white {
+            background-color: white;
+        }
+
+        #aqua {
+            background-color: aqua;
+        }
+
+        #violet {
+            background-color: violet;
+        }
+
+        #black {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About us</h1>
+    <img src="about.jpg" alt="">
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae veniam vel illo nostrum! Recusandae
+        nam aut, mollitia autem numquam illo harum reiciendis saepe quos non exercitationem ipsam, quisquam ipsum
+        voluptatibus officia perferendis, iure nesciunt officiis molestiae tenetur quasi! Optio ea aliquid, eum nulla
+        tenetur ipsa quae iusto temporibus maiores dolorum impedit cum perferendis veniam id asperiores nihil facere
+        modi quo quidem. Quaerat fugiat optio ea. Corporis, eos tempora? Sed dolores beatae delectus perspiciatis neque
+        culpa cumque, porro a animi magnam earum itaque eum minus. Id perferendis maiores autem deleniti assumenda
+        labore explicabo repudiandae quibusdam placeat vitae illo, nam dolores dignissimos blanditiis perspiciatis cum
+        soluta est veniam corporis laboriosam harum nobis totam voluptate? Eum perferendis, corrupti blanditiis nam
+        consequatur numquam doloremque quidem quod possimus accusamus nostrum cumque incidunt! Nobis explicabo, porro,
+        iure eaque fuga, consequatur corporis tempora ut cupiditate eos consectetur ipsum provident impedit nostrum
+        perspiciatis nisi accusamus. Ipsa possimus qui assumenda architecto reiciendis voluptatum, sunt quas quia. Ullam
+        odit cumque velit nostrum error eum fugit accusantium! Dolores rem, molestias laboriosam harum temporibus enim
+        ab aspernatur id, voluptate sint alias ipsa odio ratione? Minima enim molestias necessitatibus nam, harum vero
+        molestiae voluptatibus reiciendis id blanditiis debitis temporibus similique? Nisi expedita, accusamus magni
+        nostrum incidunt omnis assumenda veritatis velit ab quidem, nemo ullam ipsa, alias odio mollitia laborum totam
+        obcaecati quibusdam odit repellat sequi beatae! Eligendi, alias, eos commodi beatae consectetur laboriosam
+        magnam eius at nobis id maxime perferendis tenetur excepturi maiores unde ea corrupti dolore, itaque vel fugiat
+        quae nostrum. Expedita sed culpa animi ratione minima libero fuga error aliquid, pariatur incidunt quam, fugit
+        repellendus quas quod ipsa eius maxime earum quisquam officiis sapiente, laudantium quae dolore eveniet. Velit
+        qui ab possimus ut ipsa doloribus voluptas voluptatum consectetur minus quisquam. Animi, ipsa dicta dolorem
+        voluptates non quia saepe ut a quidem praesentium maxime mollitia illum inventore magni officiis voluptatem
+        quisquam rerum reiciendis. Fugit quae corporis doloremque, ducimus, ipsum eveniet accusamus quis maxime non,
+        enim architecto facilis amet atque? Magni maxime facere totam repellat. Consequatur magni perferendis mollitia,
+        eligendi ab odio totam ad nobis dignissimos inventore doloribus soluta quasi facilis, sequi illum blanditiis
+        asperiores quaerat. Pariatur quasi commodi quod voluptas corrupti dolores, impedit, sequi perferendis ullam id
+        eos quam provident numquam velit possimus. Ut, quaerat eligendi? Repudiandae, voluptatem dolor? Nostrum
+        inventore doloremque mollitia dolorem consectetur. Atque distinctio quaerat soluta quasi inventore sapiente
+        eveniet harum! Illo earum assumenda modi odit nulla mollitia voluptas dolor veniam debitis, deleniti sint,
+        excepturi dicta non minus. Consequuntur veritatis id aut provident officia aspernatur, dolorem voluptatum dolor
+        recusandae quasi consequatur consectetur quod sit fugiat beatae atque natus deleniti odio, saepe, perspiciatis
+        illum molestias sequi sed voluptates? Explicabo itaque aut, suscipit praesentium quis, nobis voluptate rem
+        numquam, incidunt architecto accusamus? Accusantium voluptate debitis quaerat dicta tempora veniam. A totam nemo
+        dolor distinctio eius odio inventore nihil ipsa odit voluptatibus velit harum, reprehenderit, sint excepturi
+        animi quasi in veniam accusamus voluptatum ipsum aperiam pariatur beatae! Odit veritatis aliquid, totam delectus
+        reiciendis voluptatum adipisci maxime harum velit, perspiciatis voluptate error.</p>
+  
+        <script>
+            function changeBG(color){
+               document.body.style.backgroundColor=color;
+               let txt=document.getElementsByClassName("text");
+               if(color=='#000000'){
+                for(let elm of txt){
+                    elm.style.color="white";
+                }
+               }else{
+                for(let elm of txt){
+                    elm.style.color="black";
+               }
+            }
+        }
+        </script>
+</body>
+
+</html>
